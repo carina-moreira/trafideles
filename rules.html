@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trafidèles</title>
+  <link rel="shortcut icon" type="image/svg" href="./img/fav_icon.svg" />
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!-- MENU MOBILE -->
+    <nav id="mySidenav" class="sidenav navbar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="quemSomos_submenu-container navbar">
+        <a href="./index.html" class="menu_item">Início</a>
+
+        <div class="quemSomos_submenu-mobile navbar" onclick="dropDownQS()">
+          <a class="menu_item black dropbtn navbar">Quem Somos</a>
+          <img src="./img/icon_arrow-down.svg" class="arrow-down dropbtn navbar" alt="arrow-down">
+        </div>
+        <div id="quemSomos_dropDown-mobile" class="dropdown-content-mobile">
+          <div class="quemSomos_submenu-mobile-content">
+            <div class="ball"></div>
+            <a class="quemSomos_submenu" href="./quemSomos.html">Sobre a Trafidèles</a>
+          </div>
+          <div class="quemSomos_submenu-mobile-content">
+            <div class="ball"></div>
+            <a href="./principios.html">Os Nossos Princípios</a>
+          </div>
+          <div class="quemSomos_submenu-mobile-content">
+            <div class="ball"></div>
+            <a href="./ferramentas.html">Ferramentas de Tradução</a>
+          </div>
+          <div class="quemSomos_submenu-mobile-content">
+            <div class="ball"></div>
+            <a href="./equipa.html">A Equipa</a>
+          </div>
+        </div>
+        <a href="./servicos.html" class="menu_item white-hover">Serviços</a>
+        <a href="./orcamento.html" class="menu_item">Orçamento</a>
+        <a href="./contactos.html" class="menu_item">Contactos</a>
+      </div>
+
+      <div class="sidenav_socialMedia">
+        <a href="#" class="menu_item-socialMedia">
+          <img src="./img/icon_socialMedia.svg" class="sidenav_socialMedia-item" alt="instagram" />
+        </a>
+        <a href="#" class="menu_item-socialMedia">
+          <img src="./img/icon_socialMedia2.svg" class="sidenav_socialMedia-item" alt="facebook" />
+        </a>
+        <a href="#" class="menu_item-socialMedia">
+          <img src="./img/icon_socialMedia3.svg" class="sidenav_socialMedia-item" alt="linkedin" />
+        </a>
+      </div>
+    </nav>
+    <!-- MENU DESKTOP-->
+    <nav id="mySidenav" class="menu_desk">
+      <div class="quemSomos_menu">
+        <a class="menu_item black dropbtn" onclick="dropDownQSDesk()">Quem Somos</a>
+        <img src="./img/icon_arrow-down.svg" class="arrow-down dropbtn" alt="arrow-down" onclick="dropDownQSDesk()">
+      </div>
+      <div id="quemSomos_dropDown" class="dropdown-content">
+        <a href="./quemSomos.html">Sobre a Trafidèles</a>
+        <a href="./principios.html">Os Nossos Princípios</a>
+        <a href="./ferramentas.html">Ferramentas de Tradução</a>
+        <a href="./equipa.html">A Equipa</a>
+      </div>
+      <a href="./servicos.html" class="menu_item black">Serviços</a>
+      <a href="./orcamento.html" class="menu_item black">Orçamento</a>
+      <a href="./contactos.html" class="menu_item black">Contactos</a>
+    </nav>
+    <input type="image" onclick="openNav()" src=".//img/icon_burgerMenu.svg" class="burguerMenu" />
+
+    <!-- LOGO HEADER -->
+    <a href="./index.html" class="logo_header-click" id="logo-opacity">
+      <img src="./img/logo_header.svg" alt="Trafidèles" class="logo_header" />
+    </a>
+
+    <!-- FLAGS DROPDOWN -->
+    <div class="flags" id="flags-opacity">
+      <input type="image" onclick="dropDown()" src="./img/flag_pt.svg" alt="flag" class="dropbtn flags_style" />
+
+      <img src="./img/icon_arrow-down.svg" class="arrow-down dropbtn" alt="arrow-down" onclick="dropDown()">
+
+      <div id="flags_dropDown" class="dropdown-content">
+        <!--       <a href="#" title="Português">
+                    <img src="./img/flag_pt.svg" class="flag_size" alt="Português">
+                </a> -->
+        <a href="#" title="Español">
+          <img src="./img/flag_es.svg" class="flag_size" alt="Español" />
+        </a>
+        <a href="#" title="Français">
+          <img src="./img/flag_fr.svg" class="flag_size" alt="Français" />
+        </a>
+        <a href="#" title="English">
+          <img src="./img/flag_uk.svg" class="flag_size" alt="English" />
+        </a>
+        <a href="#" title="Italiano">
+          <img src="./img/flag_it.svg" class="flag_size" alt="Italiano" />
+        </a>
+        <a href="" title="Pусский">
+          <img src="./img/flag_ru.svg" class="flag_size" alt="Pусский" />
+        </a>
+        <a href="" title="Deutsche">
+          <img src="./img/flag_de.svg" class="flag_size" alt="Deutsche" />
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- INTRO -->
+    <div class="rules">
+      <a id="backToTop"></a>
+      <div class="rules-title">
+        <h1 class="text-title">Área Legal</h1>
+      </div>
+
+
+      <select id="show" class="selectbox form-control" name="show_text_area">
+        <option value="1">Apostila de Haia</option>
+        <option value="2">Normas ISO</option>
+        <option value="3">Políticas de Privacidade</option>
+        <option value="4">Termos e Condições</option>
+      </select>
+
+
+      <div class="rules-header">
+        <button class="tablink text-body color-test" onclick="openRules('apostila', event)">
+          Apostila de Haia
+        </button>
+
+        <button class="tablink text-body test2 color-test" onclick="openRules('normas', event)">
+          Normas ISO
+        </button>
+
+        <button class="tablink text-body color-test" onclick="openRules('politica', event)">
+          Políticas de Privacidade
+        </button>
+
+        <button class="tablink text-body color-test" onclick="openRules('termos', event)">
+          Termos e Condições
+        </button>
+      </div>
+
+      <div class="rules-text tabcontent" id="apostila" style="display: block;">
+        <h1 class="text-title">Apostila de Haia</h1>
+        <div class="text">
+          <p class="text-body">Em resposta aos desafios do mundo contemporâneo, a Apostila da Convenção de Haia
+            simplifica a o processo de certificação de traduções legais e a autenticação de documentos no contexto
+            internacional.
+            <br>
+            Mas... o que é realmente a Apostila de Haia?
+            <br>
+            Trata-se de um certificado que comprova a validade legal de um documento público em todos os países
+            signatários da Convenção de Haia de 1961. Em 2015, já 103 países tinham assinado esta Convenção.
+            <br>
+            As traduções de documentos oficiais, como cartões de cidadão, certificados, cartas de condução ou contratos,
+            poderão requerer diferentes tipos de certificação, consoante o país a que se destinam.
+            <br>
+            Em alguns casos, para além da certificação em notário, câmara de comércio e indústria, advogado ou
+            solicitador, será também necessário realizar a legalização por apostila, sempre que o documento traduzido se
+            destinar a um país signatário da Convenção de Haia de 5 de outubro de 1961. A emissão de apostila em
+            Portugal está a cargo da Procuradoria Geral da República, de acordo com o Decreto-lei n.º 48 450 de 24 de
+            junho de 1968.
+            No entanto, podemos tratar desta questão por si.
+            <br>
+            Disponibilizando-nos conforme necessário a “apostilar” por si os seus documentos.
+          </p>
+        </div>
+      </div>
+      <div class="rules-text tabcontent" id="normas" style="display: none;">
+        <h1 class="text-title">Normas ISO 17100: 2015</h1>
+        <div class="text">
+          <p class="text-body">A norma de Qualidade ISO 17100, publicada no ano de 2015 pela Organização Internacional
+            de Normalização, tem como objetivo a definição dos critérios de qualidade e a certificação dos serviços de
+            tradução, englobando assim todas as fases do processo tradutivo: recursos humanos e técnicos, controlo da
+            qualidade, registo dos projetos, procedimentos jurídicos, serviços e definição dos prazos.
+            <br>
+            Para além disso, esta também inclui as diretivas relativas aos prestadores de serviços de tradução, à gestão
+            de procedimentos-chave, aos requisitos mínimos de qualificação, à disponibilidade e à gestão dos recursos e
+            de outras ações necessárias para providenciar um serviço de tradução de qualidade.
+            <br>
+            A Trafidèles é uma empresa que se destaca por ser uma empresa de tradução certificada pela ISO 17100 em
+            Portugal. Orgulhamo-nos em garantir-lhe um selo de qualidade.
+          </p>
+        </div>
+      </div>
+      <div class="rules-text tabcontent" id="politica" style="display: none;">
+        <h1 class="text-title">Políticas de Privacidade</h1>
+        <p class="text">
+        <p class="text-body">A Trafidèles é uma plataforma de serviços linguísticos na qual trabalham profissionais das
+          mais variadas áreas da Tradução e da Interpretação. Tendo em consideração a proveniência de todos os
+          colaboradores, os nossos serviços não têm apenas a língua portuguesa como a de partida e a de chegada, mas
+          também outros idiomas de trabalho, comunitários e extracomunitários.
+          <br>
+          Enquanto fornecedora de serviços, a equipa da Trafidèles procura proteger não só os dados pessoais dos
+          clientes e associados relativos ao website, mas também todas as informações contidas nos documentos a serem
+          traduzidos, transcritos, revistos quer sejam em formato papel ou digital. A mesma abordagem aplica-se também
+          aos serviços de Interpretação, isto é, todas as informações que forem providenciadas por parte do cliente para
+          a execução do trabalho serão confidenciais.
+          <br>
+          Além do mais, quaisquer informações que sejam prestadas durante um serviço de interpretação que o cliente
+          considere ser de caráter privado estarão sujeitas a esta Política. Contudo, é conveniente destacar que
+          qualquer informação que seja legalmente proferida em contextos de eventos de domínio público (por exemplo,
+          conferências de imprensa, sessões parlamentares ou eventos transmitidos na televisão) não pode estar protegida
+          pelas mesmas regras. Note-se que para a elaboração desta Política, a Trafidèles, teve como objetivo respeitar
+          toda a legislação aplicável no que concerne a proteção de dados.
+        </p>
+
+        <p class="rules-subtitle text-body">Motivos desta Política de Privacidade e de Proteção de Dados Pessoais</p>
+        <p class="text-body">Tendo como base o respeito e o cumprimento do que se encontra previsto no Regulamento (EU)
+          2016/679 do Parlamento Europeu e do respetivo Conselho, de 27 de abril de 2016 (“RGPD”), a Trafidèles
+          compromete-se a proporcionar aos seus colaboradores e clientes o conteúdo das Regras Gerais de Privacidade e
+          de tratamento de dados pessoais.
+          <br>
+          Deste modo, a Trafidèles, adota todas as medidas do domínio técnico e organizacional de forma a assegurar que
+          o tratamento de todos os dados pessoais seja lícito, transparente e circunscrito às finalidades autorizadas,
+          cumprindo assim com o RGPD.
+          <br>
+          A Trafidèles no âmbito da proteção e confidencialidade de todos os dados pessoais prestados, a Trafidèles,
+          zela em assegurar a sua precisão, bem como todos os direitos relativos aos seus titulares.
+          <br>
+          Atente-se que as medidas incluídas na Política de Privacidade e da Proteção de Dados da Trafidèles integram o
+          que se encontra previsto em relação à proteção e tratamento de dados pessoais em todos os documentos e mais
+          informações que os colaboradores ou clientes possam apresentar e enviar/transmitir à Trafidèles.
+        </p>
+
+        <p class="rules-subtitle text-body">O que abrange a Política de Privacidade e de Proteção de Dados da Trafidèles
+        </p>
+        <p class="text-body">A nossa Política de Privacidade e de Proteção de Dados destina-se ao levantamento e
+          tratamento dos dados facultados pelos clientes. Para sermos mais específicos, esta ação de tratamento de dados
+          inclui:
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">todas as formas de contacto com os mesmos (dados gerais, tais como, o primeiro e último
+            nome e os contactos telefónico e de correio eletrónico correspondentes);
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">o teor dos documentos relativos aos serviços proporcionados pela empresa aos seus
+            colaboradores e clientes (nomeadamente, os serviços de tradução, revisão, interpretação e de transcrição);
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body"> quaisquer informações bancárias necessárias para a efetuação de pagamentos relativos a
+            algum serviço que disponibilizamos (sejam estes NIBs, NIFs, IBANs, ou outras referências bancárias) ou para
+            a emissão de recibos e ou faturas (nomeadamente, endereços ou dados empresariais);
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body"> dados provenientes de formulários ou fichas a serem preenchidas no website (pedidos de
+            orçamento, de serviço ou de colaboração).
+          </p>
+        </div>
+        </p>
+
+        <p class="rules-subtitle text-body">O que se entende por dados pessoais?</p>
+        <p class="text-body">De acordo com o Regulamento Geral sobre a Proteção de Dados da União Europeia, por dados
+          pessoais entendem-se quaisquer informações sobre uma determinada pessoa ou entidade, identificadas ou
+          identificáveis como as “titulares” dos dados em questão.
+          <br>
+          Exemplos frequentes de dados pessoais são o nome; morada; número do documento de identificação/passaporte;
+          rendimento; perfil cultural, endereço IP; dados na posse de um hospital ou médico (dados esses que estejam
+          apenas relacionados com o domínio da saúde).
+          <br>
+          A estes ainda se acrescentam outro tipo de dados pessoais considerados de “sensíveis”, mas que podem surgir
+          num documento que precise da prestação dos nossos serviços. Note-se que este tipo de dados implica um
+          tratamento específico.
+          <br>
+          Alguns exemplos frequentes de dados sensíveis são origem racial ou étnica; orientação sexual; opiniões
+          políticas; convicções religiosas ou filosóficas; filiação sindical; dados genéticos, biométricos e relativos à
+          saúde ou dados pessoais relativos ao registo criminal, a condenações penais e infrações de um indivíduo.
+          <br>
+          É importante referir que os dados pessoais também incluem qualquer informação, seja esta de componente gráfica
+          ou sonora que possa contribuir para a identificação de qualquer pessoa.
+        </p>
+
+        <p class="rules-subtitle text-body">O que é o tratamento de dados pessoais</p>
+        <p class="text-body">O tratamento de dados pessoais é composto por um conjunto de operações realizadas sobre
+          dados pessoais ou pacotes de dados pessoais, tanto por meios manuais como automatizados. Estas abrangem os
+          seguintes passos: recolha, registo, organização, estruturação, conservação, adaptação ou alteração de dados,
+          recuperação, consulta, utilização, divulgação por transmissão, difusão ou qualquer outra forma de
+          disponibilização, comparação ou interconexão, limitação, apagamento ou destruição dos dados pessoais.
+          <br>
+          Possíveis exemplos para o tratamento de dados por parte da Trafidèles:
+          <br>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">a gestão de colaboradores e dos clientes;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">acesso/consulta de uma base de dados de contactos que contenham dados pessoais;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">gestão dos pagamentos
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">envio de mensagens através do correio eletrónico;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">destruição de documentos que contenham dados pessoais;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">publicação/colocação de uma foto de uma pessoa no website.
+          </p>
+        </div>
+        </p>
+
+        <p class="rules-subtitle text-body">Quais os responsáveis e os encarregados pela proteção de dados pessoais?</p>
+        <p class="text-body">Por um lado, a Trafidèles é o sujeito responsável pelo tratamento dos dados pessoais, sendo
+          que determina as finalidades e os meios de tratamento dos mesmos.
+          <br>
+          Deste modo, se o portador dos dados pessoais precisar de contactar com a entidade responsável pelo tratamento
+          de dados, poderá fazê-lo através do correio eletrónico da Trafidèles – colocar email.
+          <br>
+          Por outro, o encarregado é a entidade que auxilia o responsável em todas as questões relacionadas com todas as
+          questões que abrangem a proteção de dados. Mais precisamente, este desempenha as seguintes funções:
+          <br>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">informa e aconselha o responsável quanto às obrigações nos termos da lei de proteção de
+            dados;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">controla o cumprimento de toda a legislação que estiver relacionada com a proteção de
+            dados;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">funciona como um ponto de contacto para pedidos de pessoas no que concerne ao tratamento
+            dos seus dados pessoais e ao exercício dos seus direitos.
+          </p>
+        </div>
+        </p>
+
+        <p class="rules-subtitle text-body">Tipos de dados recolhidos </p>
+        <p class="text-body">A Trafidèles recolhe apenas os dados que são indispensáveis para o desenvolvimento
+          eficiente dos serviços que proporciona ao cliente. Assim, as tipologias de dados requeridos são as seguintes:
+        </p>
+
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">dados de identificação: nome, naturalidade, data de nascimento, sexo, número de
+            identificação fiscal, dados relativos ao seu documento de identificação (cartão de cidadão/passaporte);
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">dados para estabelecimento de contacto: contactos telefónicos, morada, correio
+            eletrónico;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">dados relativos a habilitações e à situação profissional: formação académica,
+            qualificações, certificações, línguas de trabalho ou currículo;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">dados associados à profissão: cargo, função, empresa e morada profissional;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">dados bancários: NIBs, NIFs, IBANs, ou outros tipos de serviço de pagamentos, tal como o
+            Paypal.
+          </p>
+        </div>
+        <p class="text-body">Note-se que todas estas categorias se aplicam não só a clientes, mas também a colaboradores
+          ou indivíduos que apresentem uma candidatura para trabalharem com a empresa.
+        </p>
+
+        <p class="rules-subtitle text-body">Como são recolhidos os dados</p>
+        <p class="text-body">Os dados pessoais acima mencionados podem ser recolhidos informaticamente (de forma
+          automatizada ou não automatizada) ou pessoalmente. Em todos estes processos garantimos o respeito pela
+          legislação relativa à Proteção de Dados Pessoais.
+          <br>
+          Todos estes dados são levantados e posteriormente armazenados em bases de dados, criadas apenas para as
+          finalidades da empresa.
+          <br>
+          É importante destacar que estes nunca serão utilizados para outros fins, salvo o consentimento do titular.
+        </p>
+
+        <p class="rules-subtitle text-body">Destinatários dos dados </p>
+        <p class="text-body">Para além da empresa Trafidèles, os dados podem destinar-se a outras entidades para fins
+          legais, tais como entidades judiciais, policiais, fiscais e reguladoras.
+        </p>
+
+        <p class="rules-subtitle text-body">Quais as finalidades dos dados</p>
+        <p class="text-body">No geral, todos os dados pessoais recolhidos são utilizados para a gestão da relação da
+          Trafidèles com os seus colaboradores e clientes.
+          <br>
+          Em termos mais específicos, o levantamento dos dados pessoais tem como alvo as seguintes finalidades:
+        </p>
+
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">o fornecimento de serviços, inclusive a introdução do cliente no sistema, registo dos
+            orçamentos, correspondência para com o cliente, arquivo de documentos em formato digital;
+          </p>
+        </div>
+        <p class="text-body">Os aspetos jurídicos subjacentes ao tratamento destes dados correspondem não só à
+          realização de contratos na Trafidèles, ou à informação dos seus respetivos clientes para garantir um serviço
+          de qualidade. </p>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Divulgação de informações que possam ser úteis para os clientes ou colaboradores;
+            Atente-se que a base jurídica desta finalidade reside no interesse em manter uma boa relação para com os
+            clientes e colaboradores.
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Respeito pelas obrigações legais, inclusive o fornecimento de dados a entidades públicas;
+          </p>
+        </div>
+        <p class="text-body">Assim, a base jurídica assenta no respeito pelas obrigações legais.</p>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Faturação, gestão da contabilidade e do arquivo dos seus registos.
+          </p>
+        </div>
+
+        <p class="text-body"> As bases legítimas são a realização de contratos e o respeito da obrigação legal para
+          efeitos de faturação que respeite os prazos previstos a fim de garantir o respeito das obrigações legais. </p>
+
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body"> Coleta e reclamações judiciais e extrajudiciais, tais como a cobrança de quantias em
+            dívida por parte dos clientes.
+            As bases jurídicas correspondem ao interesse legítimo na satisfação dos créditos.
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body"> Aceitação de colaboradores, após uma seleção de currículos e candidaturas, assim como
+            todos os processos que a mesma implica.
+          </p>
+        </div>
+        <p class="text-body">Os aspetos jurídicos subjacentes são operações pré-contratuais, nomeadamente a análise das
+          candidaturas e os procedimentos de contratação.
+        </p>
+
+        <p class="rules-subtitle text-body">Período de Conservação dos Dados Pessoais</p>
+        <p class="text-body">O prazo de armazenamento dos dados pessoais depende da finalidade para qual a informação
+          foi levantada.
+          <br>
+          Contudo, existem exigências legais que preveem um tempo mínimo da conservação dos dados. Consequentemente, em
+          todos os casos nos quais não se manifestar uma necessidade legal específica, dos dados guardar-se-ão apenas
+          durante o período mínimo para os serviços relativos ao seu levantamento e tratamento, nos termos previstos
+          pela lei.
+          <br>Alguns exemplos do período mínimo de determinados serviços:
+        </p>
+
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Coletas e reclamações judiciais e extrajudiciais: o prazo é vencido aquando da cobrança
+            da quantia em
+            dívida;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Coletas e reclamações judiciais e extrajudiciais: o prazo é vencido aquando da cobrança
+            da quantia em dívida;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Faturação e gestão da contabilidade até a um período de dez (10) anos.
+          </p>
+        </div>
+
+        <p class="rules-subtitle text-body">Com quem partilhamos os seus dados e respetivas circunstâncias</p>
+        <p class="text-body">Para o desempenho das suas funções a Trafidèles poderá apoiar-se em terceiros para o
+          fornecimento de determinados serviços. Note-se que tal implica que estas partes tenham acesso a dados pessoais
+          dos clientes ou dos colaboradores. Sempre que estas situações acontecerem, a Trafidèles terá de aplicar
+          medidas para que as entidades interessadas possam providenciar o nível mais elevado possível de garantias.
+          Esta partilha de dados estabelece-se através de um contrato entre a Trafidèles e as entidades em questão.<br>
+          Deste modo, todas as entidades subcontratadas pela Trafidèles realizarão um tratamento dos dados pessoais de
+          acordo com todas as medidas necessárias, tanto técnicas como organizacionais, para assegurar a proteção dos
+          mesmos.<br>É de destacar que estes aspetos supramencionados são válidos seja para as transferências de dados
+          nacionais, bem como internacionais.
+        </p>
+
+        <p class="rules-subtitle text-body">Quais são as medidas aplicadas pela Trafidèles para garantir a proteção dos
+          seus dados pessoais?</p>
+        <p class="text-body">A Trafidèles compromete-se a assegurar a proteção dos dados pessoais recolhidos, através da
+          aprovação e da aplicação de regras muito escrupulosas neste âmbito. O respeito das mesmas é obrigatório e diz
+          respeito a toda as entidades que tiverem acesso aos dados em questão.<br>As medidas em vigor são de natureza
+          técnica e organizativa, tendo como objetivo a defesa dos dados pessoais, nomedamente a proteção contra a sua
+          difusão, perda, uso indevido, alteração, tratamento ou acesso não autorizado, bem como contra qualquer outra
+          forma de tratamento ilícito.<br>Para além disso, as entidades terceiras prestadoras de serviços que realizem o
+          tratamento dos dados pessoais por conta da Trafidèles, também se encontram na obrigação de utilizar medidas de
+          proteção adequadas, que respeitem os princípios contidos na legislação que atualmente vigora e garantam a
+          defesa dos direitos do titular dos dados.<br>Apesar de todos estes cuidados, a Trafidèles aconselha que todos
+          os clientes/colaboradores, no momento em que utilizarem a Internet e partilharem os seus dados connosco,
+          apliquem medidas de segurança suplementares de forma a evitarem possíveis inconvenientes com os mesmos.
+        </p>
+
+        <p class="rules-subtitle text-body">Quais são os seus direitos enquanto titular de dados?</p>
+        <p class="text-body">Enquanto titular de dados, dispõe dos seguintes direitos:</p>
+
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Direito de acesso: pode conferir a forma como estão a ser tratados os seus dados
+            pessoais, sempre que o desejar. Além disso, poderá ainda solicitar uma cópia dos dados que estão a ser
+            tratados pela Trafidèles;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Direito à retificação: se verificar que os seus dados estão incorretos ou incompletos,
+            poderá pedir que os mesmos sejam retificados ou completados;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Direito ao apagamento: em algumas circunstâncias, enquanto detentor de dados, pode
+            requerer o apagamento dos mesmos. Este, no entanto, é um direito circunscrito a determinados casos,
+            nomeadamente situações que impliquem o respeito por obrigações legais relativas à Trafidèles, possíveis
+            declarações, exercício/defesa de um determinado direito num contexto judicial;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Direito à limitação do tratamento: em alguns casos, poderá requerer à Trafidèles, a
+            limitação ou a suspensão do tratamento ou do acesso aos dados pessoais. Tal pode ocorrer sempre que
+            contestar a exatidão dos seus dados e que porventura permita à Trafidèles que os verifique;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Direito à portabilidade: quando o tratamento de dados estiver relacionado com um contrato
+            do qual faça parte ou para o qual tenha dado a sua autorização, poderá requerer a entrega dos dados
+            fornecidos, e, se for possível a sua transferência a outros responsáveis pelo tratamento;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Direito de oposição: caso a Trafidèles tencione utilizar os seus dados em serviços que
+            sejam pertinentes, mas que não se incluam dentro das finalidades para as quais estes foram inicialmente
+            recolhidos, poderá opor-se ao tratamento dos seus dados pessoais, por razões associadas à sua situação
+            particular. Note-se que caso tal aconteça, a Trafidèles compromete-se a deixar de tratar os seus dados
+            pessoais;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Direito a anular o seu consentimento: em todas as situações nas quais é necessário o seu
+            consentimento para o tratamento de dados, poderá também, em qualquer eventualidade, retirar o seu
+            consentimento. No momento em que anular a sua autorização, os seus dados deixarão de ser tratados, a não ser
+            que vigore qualquer outro motivo jurídico que permite este/esse tratamento;
+          </p>
+        </div>
+        <div class="ball-wrapper">
+          <div class="ball"></div>
+          <p class="text-body">Direito de reclamação: enquanto titular dos seus dados também possui o direito de
+            reclamar, perante as autoridades de controlo, quanto a questões relativas aos mesmos.
+          </p>
+        </div>
+        <p class="text-body">Enquanto titular dos seus dados pessoais poderá exercer os seus direitos, através de um
+          requerimento por escrito dirigido ao responsável pelo tratamento de dados ou através dos contactos
+          disponibilizados pela Trafidèles (colocar e-mail).</p>
+
+        <p class="rules-subtitle text-body">Como efetuar uma reclamação?</p>
+        <p class="text-body">Para realizar qualquer reclamação relativamente ao tratamento dos seus dados pode fazê-lo
+          diretamente para a Autoridade de Controlo adequada (sendo esta a Comissão Nacional de Proteção de Dados
+          [CNPD]) ou junto da própria Trafidèles através dos contactos disponibilizados.
+        </p>
+
+        <p class="rules-subtitle text-body">Como se pode informar quanto a quaisquer alterações na política de proteção
+          de dados pessoais da Trafidèles?</p>
+        <p class="text-body">A Trafidèles, reserva-se o direito, de a qualquer momento, efetuar alterações quanto a esta
+          Política de Privacidade e de Proteção de Dados Pessoais. Estas serão sempre divulgadas através dos meios de
+          contacto partilhados com os detentores dos dados pessoais que se encontrem na sua base de dados.
+        </p>
+
+      </div>
+
+      <div class="rules-text tabcontent" id="termos" style="display: none;">
+        <h1 class="text-title">Termos e Condições</h1>
+        <div class="text">
+          <p class="text-body">
+            Ao aceder o website da Trafidèles – Plataforma de Serviços Linguísticos, em [colocar website], ou qualquer
+            tipo de conteúdo que lá esteja presente, o utilizador concorda com os termos e condições abaixo
+            apresentadas. Note-se que para tal não é necessário um consentimento ou ato posterior da sua parte.
+          </p>
+          <p class="rules-subtitle text-body">1. Direitos de Autor</p>
+          <p class="text-body">Os conteúdos e o próprio design do site, bem como quaisquer outros elementos enviados a
+            partir do nosso e-mail ou providenciados a através do website são propriedade da Trafidèles. A reprodução de
+            conteúdos é autorizada pela indicação da fonte, a não ser que a titular expresse o contrário. O utilizador
+            não pode nem utilizar nem reproduzir o nome Trafidèles, bem como o seu logótipo. Além disso, também não
+            poderá criar hiperligações para [colocar website] sem uma autorização por escrito por parte da Trafidèles.
+          </p>
+
+          <p class="rules-subtitle text-body">2. Declaração e Exoneração de Responsabilidade</p>
+          <p class="text-body">A informação presente no website da Trafidèles deve ser considerada somente na sua
+            vertente informativa, podendo eventualmente não se encontrar completa ou atualizada. A Trafidèles também não
+            pode assegurar que toda a informação apresentada em linha coincida na sua totalidade com as fontes oficiais
+            consideradas. Consequentemente, a informação disponível não prescinde da consulta de documentos
+            classificados como sendo legalmente autênticos. Toda informação inserida no website não corresponde a uma
+            opinião profissional ou jurídica. Deste modo, esta não poder sofrer alterações ou estar sujeita a qualquer
+            tipo de exploração comercial.
+            <br>
+            A Trafidèles não pode garantir a isenção de erros ou de falhas técnicas no que concerne os conteúdos,
+            ferramentas, produtos e serviços do seu website. Assim, a Trafidèles não é responsável por quaisquer danos,
+            prejuízos ou problemas que que possam ocorrer durante a utilização correta/incorreta do website nem
+            relativamente a quaisquer outros serviços ou websites externos. Para além disso, a Trafidèles não assegura
+            nem declara que os ficheiros descarregáveis presentes no seu website estejam isentos de vírus, worms,
+            cavalos de Troia, scripts ou qualquer outro código ou programa cujo conteúdo possa ter propriedades
+            destrutivas ou prejudiciais.
+          </p>
+
+          <p class="rules-subtitle text-body">3. Acesso e alterações ao Website</p>
+          <p class="text-body">Sem a necessidade de providenciar qualquer explicação, a Trafidèles reserva-se o direito
+            absoluto de suspender, alterar, acrescentar ou eliminar parte dos conteúdos do seu website. Note-se que em
+            qualquer altura a Trafidèles pode limitar o uso e a acessibilidade do seu website.</p>
+
+          <p class="rules-subtitle text-body">4. Alterações aos termos deste Acordo</p>
+          <p class="text-body">Os termos deste acordo podem sofrer alterações realizadas pela Trafidèles. Caso tal
+            aconteça, os utilizadores e colaboradores serão informados por e-mail ou através de uma publicação no
+            website dos pormenores relativos às modificações.</p>
+
+          <p class="rules-subtitle text-body">5. Lei Aplicável e Tribunal Competente</p>
+          <p class="text-body">Os termos e condições aqui presentes são tanto regidos como interpretados em consonância
+            com a lei portuguesa.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="./index.html" class="footer_logo">
+      <img src="./img/logo_footer.svg" alt="Trafidèles" />
+    </a>
+    <div class="footer">
+      <div class="footer_container footer_container-1">
+        <div class="footer_elements footer_elements-1">
+          <img src="./img/img_footer-1.svg" class="footer_img" alt="get in touch" />
+          <div class="footer_elements-txt">
+            <a href="tel:+351000000000">351+ 000 000 000</a>
+            <a href="mailto:trafideles@linguisticservices.com">trafideles@linguisticservices.com</a>
+          </div>
+        </div>
+        <div class="footer_elements footer_elements-2">
+          <img src="./img/img_footer-2.svg" class="footer_img" alt="blog" />
+          <div class="footer_elements-txt">
+            <a href="#">trafideles-bolg.com</a>
+            <div class="footer_elements-socialMedia">
+              <div class="footer_elements-socialMedia-img">
+                <a href="#" title="Instagram">
+                  <img src="./img/icon_socialMedia.svg" class="footer_socialMedia" alt="instagram" />
+                </a>
+                <a href="#" title="Facebook">
+                  <img src="./img/icon_socialMedia2.svg" class="footer_socialMedia" alt="facebook" />
+                </a>
+                <a href="#" title="Linkedin">
+                  <img src="./img/icon_socialMedia3.svg" class="footer_socialMedia" alt="linkedin" />
+                </a>
+              </div>
+              <span>@trafideles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_container footer_container-2">
+        <div class="footer_elements footer_elements-3">
+          <div class="footer_elements-txt">
+            <!-- <a href="./rules.html">Apostila de Haia</a>
+              <a href="./rules.html">Normas ISO</a> -->
+            <a onclick="openRules('apostila', this, '#9c4cc2')">Apostila de Haia</a>
+            <a class="test">Normas ISO</a>
+          </div>
+        </div>
+        <div class="footer_elements footer_elements-4">
+          <div class="footer_elements-txt">
+            <a href="./rules.html">Política de Privacidade</a>
+            <a href="./rules.html">Termos e Condições</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="sticky-container dropbtn">
+      <div class="sticky-first">
+        <img alt="" src="./img/icon_arrow-up.svg" />
+      </div>
+    </a>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+</body>
+
+</html>

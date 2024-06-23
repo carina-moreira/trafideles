@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700px" height="430px" viewBox="0 0 700 430" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Background green</title>
+    <defs>
+        <linearGradient x1="0%" y1="32.0167325%" x2="77.6968517%" y2="87.638784%" id="linearGradient-1">
+            <stop stop-color="#C4E2DE" stop-opacity="0.286166958" offset="0%"></stop>
+            <stop stop-color="#C4E2DF" offset="100%"></stop>
+            <stop stop-color="#F6F2F8" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="-17" y="0" width="717" height="430"></rect>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Mobile-Copy-3">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Background-green" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

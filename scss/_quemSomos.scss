@@ -1,0 +1,34 @@
+.quemSomos {
+  &_info {
+    p:nth-child(1) {
+      font-size: 24px;
+    }
+
+    p:nth-child(3) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &_cont {
+    background: $section_bg;
+
+    .text-title {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .purple_text {
+    font-family: $titlesfont;
+    font-size: 24px;
+    color: $purple;
+    font-weight: 100;
+    line-height: 30px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}

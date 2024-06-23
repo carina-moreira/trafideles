@@ -1,0 +1,19 @@
+{
+  "name": "tfd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass ./scss/styles.scss ./css/styles.css",
+    "watch": "sass --watch ./scss/styles.scss ./css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flickity": "^2.2.2",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "prettier": "2.2.0"
+  }
+}

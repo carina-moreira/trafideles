@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>instagram</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Home-2-Copy-5" transform="translate(-689.000000, -3270.000000)" stroke="#000000" stroke-width="0.75">
+            <g id="Group-5" transform="translate(552.000000, 3196.000000)">
+                <g id="Group" transform="translate(138.000000, 72.000000)">
+                    <g id="instagram" transform="translate(0.000000, 3.000000)">
+                        <rect id="Rectangle" fill-opacity="0.4" fill="#C4E2DE" x="0" y="0" width="10" height="10" rx="2.5"></rect>
+                        <path d="M7,4.685 C7.12656122,5.5384858 6.69151292,6.37692226 5.92081326,6.76483692 C5.15011361,7.15275158 4.21752428,7.00268533 3.60741948,6.39258052 C2.99731467,5.78247572 2.84724842,4.84988639 3.23516308,4.07918674 C3.62307774,3.30848708 4.4615142,2.87343878 5.315,3 C6.18648838,3.12923078 6.87076922,3.81351162 7,4.685 Z" id="Path"></path>
+                        <line x1="7.75" y1="2.25" x2="7.755" y2="2.25" id="Path"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

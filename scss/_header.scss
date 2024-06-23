@@ -1,0 +1,314 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 33px;
+    height: 118px;
+    padding: 0px 27px 0 27px;
+    top: 0;
+    background-color: $white;
+    // border-bottom: 1px solid #d6d6dd;
+
+    @media screen and (min-width: 440px) {
+        background: $white;
+    }
+    @media screen and (min-width: 725px) {
+        height: 103px;
+        background: $white;
+        border-bottom: 1px solid #d6d6d6;
+    }
+}
+
+/* SIDENAV AKA MENU MOBILE */
+.sidenav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    font-family: $titlesfont;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 60px;
+    box-shadow: $box_shadow;
+
+    @media screen and (max-height: 450px) {
+        padding-top: 15px;
+    }
+    /* APLICAR ISTO MAS REVER JS PORQUE É LÁ QUE TEM DE REESCREVER */
+    // @media screen and (min-width: 600px) {
+    //     width: 350px;
+    // }
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: $purple_dark;
+        display: block;
+        transition: 0.3s;
+        @media screen and (max-height: 450px) {
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    }
+
+    a:hover {
+        color: $purple;
+    }
+
+    &_socialMedia {
+        margin-left: 30px;
+        display: flex;
+
+        a {
+            padding: 5px;
+        }
+        &-item {
+            width: 23px;
+            height: 23px;
+        }
+    }
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.burguerMenu {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    background: $white;
+    box-shadow: $box_shadow;
+    border-radius: 8px;
+}
+
+.burguerMenu {
+    @media screen and (min-width: 420px) {
+        display: block;
+    }
+    @media screen and (min-width: 725px) {
+        display: none;
+    }
+}
+
+.quemSomos_menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    &_item {
+        text-decoration: none;
+    }
+    &_desk {
+        display: none;
+        font-family: $titlesfont;
+        align-items: center;
+        @media screen and (min-width: 725px) {
+            display: flex;
+            position: absolute;
+            right: 90px;
+            width: 50%;
+            justify-content: space-between;
+            margin-right: 2%;
+        }
+        @media screen and (min-width: 768px) {
+            width: 400px;
+        }
+    }
+}
+
+/* LOGO HEADER */
+.logo_header {
+    width: 90%;
+    height: auto;
+    &-click {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+/* DROPDOWN - FLAGS */
+
+.flags {
+    display: flex;
+    background: $white;
+    box-shadow: $box_shadow;
+    border-radius: 8px;
+
+    &_style {
+        width: 35px;
+        height: 35px;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    @media screen and (min-width: 725px) {
+        .arrow-down {
+            display: block;
+        }
+    }
+}
+.dropbtn,
+.dropbtn-mobile {
+    box-sizing: border-box;
+    background-color: $white;
+    border: none;
+    box-shadow: $box_shadow;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    @media screen and (min-width: 420px) {
+        box-shadow: none;
+    }
+}
+
+.dropdown-content,
+.dropdown-content-mobile {
+    position: absolute;
+    display: none;
+    overflow: auto;
+    z-index: 1;
+    background: $white;
+    box-shadow: $box_shadow;
+    border-radius: 8px;
+}
+
+.dropdown-content-mobile {
+    background: transparent;
+    box-shadow: none;
+    position: relative;
+}
+
+.dropdown-content a {
+    padding: 8px 0;
+    display: block;
+    font-family: $bodyfont;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.dropdown-content-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.show,
+.show_qs,
+.show_qs-desk {
+    padding: 6px 45px;
+    padding-top: 0;
+    display: block;
+}
+
+.show {
+    top: 5rem;
+    padding: 21px;
+    right: 12px;
+    // right: 2%;
+    @media screen and (min-width: 720px) {
+        right: 21px;
+        // right: 3%;
+    }
+
+    a {
+        padding: 4px 0;
+    }
+}
+
+/* Dropdown Desktop */
+.show_qs-desk {
+    padding: 25px 35px;
+    top: 2rem;
+    left: -3rem;
+
+    a:hover,
+    a:active {
+        color: $green_dark !important;
+    }
+}
+
+.flag {
+    &_size {
+        width: 21px;
+        height: 15px;
+    }
+}
+
+.quemSomos_submenu-mobile {
+    display: flex;
+    .dropbtn {
+        box-shadow: none;
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        a {
+            font-family: $bodyfont;
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 20px;
+            margin-left: 0;
+            padding: 8px;
+            padding-left: 0;
+        }
+    }
+}
+
+.quemSomos_submenu-container {
+    height: 65%;
+}
+
+.sticky-container {
+    height: 35px;
+    width: 35px;
+    background: $white;
+    box-shadow: $box_shadow;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(26, 23, 36, 0.96);
+    border-right: 1px solid #8383a2;
+    transform: translateX(-100%);
+    transition: 0.3s transform linear;
+    padding-left: 0;
+}
+.open {
+    transform: translateX(0%);
+}
+
+.lock-scroll {
+    overflow: hidden;
+}

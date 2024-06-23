@@ -1,0 +1,252 @@
+.green_background {
+  background: $green_gradient;
+}
+
+.box,
+.box-2 {
+  background: $white;
+  box-shadow: $box_shadow;
+  border-radius: 25px;
+  width: 250px;
+  padding: 0 42px;
+  max-width: 330px;
+
+  @media screen and (min-width: 374px) {
+    width: 300px;
+    height: 300px;
+  }
+  @media screen and (min-width: 600px) {
+    width: 440px;
+    padding: 0 30px;
+    margin-left: 7%;
+  }
+}
+.box-2 {
+  @media screen and (min-width: 600px) {
+    margin-left: 0;
+    margin-right: 7%;
+  }
+}
+.section_container {
+  // padding: 5% 0;
+  padding: 64px 0;
+  @media screen and (min-width: 445px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.welcome,
+.orcamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 280px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 374px) {
+    height: 230px;
+  }
+  @media screen and (min-width: 600px) {
+    margin-left: 3%;
+  }
+  @media screen and (min-width: 826px) {
+    height: 230px;
+    margin-left: 7%;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+  }
+
+  h2 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  p {
+    font-family: $bodyfont;
+    font-weight: 100;
+  }
+  &_btn {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 374px) {
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 23px;
+    }
+
+    &-cont {
+      margin-bottom: 10px;
+      // margin-left: 42px;
+      @media screen and (min-width: 374px) {
+        margin-left: 0;
+        margin-bottom: 0px;
+      }
+    }
+    &-el {
+      font-size: 15px;
+      background: $white;
+      border: 1px solid $purple_dark;
+      color: $purple_dark;
+      font-family: $bodyfont;
+      font-weight: 300;
+      letter-spacing: 0;
+      border-radius: 8px;
+      max-width: 125px;
+      min-width: 104px;
+      min-height: 45px;
+      padding: 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      cursor: pointer;
+      @media screen and (min-width: 725px) {
+        padding: 0 30px;
+      }
+    }
+  }
+}
+
+.orcamento {
+  @media screen and (min-width: 600px) {
+    margin-right: 3%;
+  }
+  @media screen and (min-width: 826px) {
+    margin-right: 7%;
+  }
+}
+
+/* QUEM SOMOS */
+.quemSomos {
+  padding: 60px 30px;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 64px 120px;
+  }
+
+  &_info {
+    order: 2;
+    @media screen and (min-width: 600px) {
+      width: 50%;
+    }
+  }
+}
+
+/* SERVIÇOS */
+
+.servicos-home {
+  padding: 60px 30px;
+  background: $section_bg;
+  @media screen and (min-width: 600px) {
+    padding: 60px 35px;
+  }
+  @media screen and (min-width: 675px) {
+    padding: 60px 50px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 60px 60px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 80px 185px;
+  }
+
+  .servicos_section {
+    margin-top: 18px;
+    margin-bottom: 25px;
+  }
+
+  .servicos_cont {
+    margin: 0 auto;
+    @media screen and (min-width: 600px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-div {
+      @media screen and (min-width: 600px) {
+        max-width: 46%;
+      }
+    }
+  }
+
+  .saberMais {
+    &-mob {
+      display: block;
+      @media screen and (min-width: 600px) {
+        display: none;
+      }
+    }
+    &-desk {
+      display: none;
+      @media screen and (min-width: 600px) {
+        display: block;
+      }
+    }
+  }
+}
+
+/* ORÇAMENTO */
+
+.orcamento {
+  padding: 42px;
+  height: 277px;
+  @media screen and (min-width: 600px) {
+    order: 2;
+  }
+  p {
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+}
+
+/* WELCOME IMG */
+.img-1,
+.img-4 {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 530px;
+  @media screen and (min-width: 600px) {
+    order: 1;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+    margin-left: 7%;
+  }
+}
+/*  SERVIÇOS IMG */
+.img-3 {
+  display: none;
+  @media screen and (min-width: 600px) {
+    display: block;
+    max-width: 395px;
+  }
+}
+/*  QUEM SOMOS IMG */
+.img-2 {
+  order: 1;
+  margin-top: 30px;
+  max-width: 530px;
+  @media screen and (min-width: 600px) {
+    margin-top: 0;
+    width: 50%;
+  }
+  @media screen and (min-width: 1024) {
+    max-width: 530px;
+  }
+}

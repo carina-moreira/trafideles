@@ -1,0 +1,102 @@
+$titlesfont: "Poiret One", cursive;
+$titlesfontweights: "400";
+$bodyfont: "Open Sans", sans-serif;
+$bodyfontweight: "100";
+$semibold: 400;
+$bold: 600;
+
+$tittlessize-mob: 56px;
+$tittlessize-tab: 78px;
+$tittlessize-desk: 90px;
+
+$purple: #9c4cc2;
+$purple_dark: #645970;
+$purple_light: #aa84bc;
+$purple_footer: #fefbff;
+$purple_job: #b49bbf;
+
+$purple_slider: rgba(156, 76, 194, 0.19);
+
+$break_bg: #b49bbf;
+$green: #c4e2de;
+$green_dark: #346e66;
+$green_gradient: radial-gradient(75% 180%, #c4e2df 72%, #c4e2df 100%, #c4e2df 100%);
+$section_bg: linear-gradient(192deg, #fbfcfe 0%, #fcfefe 100%);
+$white: #fff;
+$black: #000;
+$newblack: #313a43;
+
+$container: rgba(212, 222, 221, 0.11);
+$box_shadow: 2px 5px 15px 0 rgba(181, 190, 202, 0.23);
+
+$animationtime: 0.4s;
+
+// GRID MOBILE //
+$gridcolumns-mob: 4;
+$gridgutter-mob: 15px;
+$gridwidth-mob: 95%;
+
+// GRID TABLET //
+$gridcolumns-tab: 6;
+$gridgutter-tab: 25px;
+$gridwidth-tab: 80%;
+
+// GRID DESKTOP //
+$gridcolumns-desk: 12;
+$gridgutter-desk: 30px;
+$gridwidth-desk: 1200px;
+
+// MEDIA QUERIE //
+$tablet: 680px;
+$desktop: 1200px;
+
+// 320px — 480px: Mobile devices.
+// 481px — 768px: iPads, Tablets.
+// 769px — 1024px: Small screens, laptops.
+// 1025px — 1200px: Desktops, large screens.
+// 1201px and more — Extra large screens, TV.
+
+// @media screen and (min-width: 374) {}
+
+// @media screen and (min-width: 420) {}
+
+// @media screen and (min-width: 445) {}
+
+// @media screen and (min-width: 450) {}
+
+// @media screen and (min-width: 500) {}
+
+// @media screen and (min-width: 600) {}
+
+// @media screen and (min-width: 641) {}
+
+// @media screen and (min-width: 675) {}
+
+// @media screen and (min-width: 700) {}
+
+// @media screen and (min-width: 768) {}
+
+// @media screen and (min-width: 800) {}
+
+// @media screen and (min-width: 826) {}
+
+// @media screen and (min-width: 1024) {}
+
+// @media screen and (min-width: 1040) {}
+
+// $formlineheight: 22px;
+// $formborderwidth: 2px;
+
+// $icomoon-font-family: "iconz" !default;
+// $icomoon-font-path: "../fonts" !default;
+// $iczarrow: "\e900";
+// $iczbehance: "\e901";
+// $iczdev: "\e902";
+// $iczdribbble: "\e903";
+// $iczfacebook: "\e904";
+// $iczinstagram: "\e905";
+// $iczmkt: "\e906";
+// $icztwitter: "\e907";
+// $iczhamburger: "\e908";
+// $iczclose: "\e909";
+// $iczdsgn: "\e90a";

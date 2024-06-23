@@ -1,0 +1,90 @@
+.orcamento_section {
+  margin: 0px 47px 27px 47px;
+  @media screen and (min-width: 600px) {
+    margin-right: 0;
+    width: 80%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 40%;
+  }
+  &-p {
+    font-size: 17px;
+    margin-block-end: 0.5rem;
+    line-height: normal;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 21px;
+    }
+  }
+  &-2 {
+    background: $section_bg;
+    @media screen and (min-width: 445px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width: 600px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    @media screen and (min-width: 1024px) {
+      height: 650px;
+    }
+  }
+  &-3 {
+    font-family: $bodyfont;
+    font-weight: $bodyfontweight;
+    padding: 60px 47px 27px 47px;
+    @media screen and (min-width: 600px) {
+      margin-right: 0;
+      width: 80%;
+      margin-bottom: 80px;
+      order: 2;
+    }
+    @media screen and (min-width: 700px) {
+      margin-right: 47px;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 40%;
+      padding-left: 0;
+    }
+  }
+  .text-subtitle {
+    font-size: 21px;
+    margin-block-end: 0.5rem;
+    font-weight: normal;
+  }
+}
+
+.purpleBtn_container {
+  margin-top: 26px;
+}
+
+.btn-contained_long {
+  padding: 12px;
+}
+
+.img-16,
+.img-17 {
+  padding-bottom: 60px;
+  width: auto;
+  @media screen and (min-width: 445px) {
+    width: 460px;
+  }
+  @media screen and (min-width: 500px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 600px) {
+    width: 300px;
+    padding-bottom: 0;
+    order: 1;
+  }
+  @media screen and (min-width: 700px) {
+    width: 430px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 530px;
+  }
+}

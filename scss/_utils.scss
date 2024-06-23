@@ -1,0 +1,246 @@
+.animate {
+  -webkit-transition: all $animationtime ease;
+  -moz-transition: all $animationtime ease;
+  -ms-transition: all $animationtime ease;
+  -o-transition: all $animationtime ease;
+  transition: all $animationtime ease;
+}
+
+.text-title {
+  font-family: $titlesfont;
+  font-size: 26px;
+  margin-bottom: 18px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  /* Confirmar o media query para o tablet */
+  @media screen and (min-width: 500) {
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 700) {
+    margin-bottom: 35px;
+  }
+}
+
+.text-body {
+  font-family: $bodyfont;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 100;
+  margin-bottom: 25px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.text-subtitle {
+  font-family: $bodyfont;
+  font-size: 19px;
+  color: $purple;
+  font-weight: 100;
+  line-height: 26px;
+  margin-bottom: 8px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.textleft {
+  text-align: left;
+}
+.textcenter {
+  text-align: center;
+}
+.textright {
+  text-align: right;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .height100 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* COLORS */
+.white {
+  color: $white;
+}
+.black {
+  color: $black;
+}
+.bold {
+  font-weight: $bold;
+}
+.semibold {
+  font-weight: $semibold;
+}
+.green {
+  color: $green;
+}
+.green-bg {
+  background: $section_bg;
+}
+.sidepadding {
+  padding: 60px 30px;
+}
+
+.ball,
+.ball-cont {
+  height: 6px;
+  width: 6px;
+  background-color: $green;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ball-cont {
+  height: 9px;
+  width: 9px;
+}
+
+.imgfit {
+  display: block;
+  width: 100%;
+  img,
+  source {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@mixin button($bg, $bs, $z) {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 8px;
+  font-family: $bodyfont;
+  background-color: $bg;
+  box-shadow: $bs;
+  cursor: pointer;
+
+  span {
+    z-index: $z;
+    position: relative;
+    font-family: $bodyfont;
+    font-size: 13px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // width: 140px;
+    width: 120%;
+    height: 140px;
+    border-radius: 50%;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+      transform 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+    background-color: $purple;
+    opacity: 0;
+  }
+
+  &:hover {
+    span {
+      color: $white;
+    }
+
+    &::before {
+      opacity: 1;
+      transition-duration: 0.85s;
+      transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+    }
+  }
+}
+
+.btn-contained {
+  @include button($purple_light, $box_shadow, 2);
+  padding: 12px 27px;
+  background-color: $purple_light;
+  box-shadow: $box_shadow;
+  font-family: $bodyfont;
+
+  span {
+    color: $white;
+  }
+}
+
+.btn-contained_white {
+  @include button($white, none, 1);
+  padding: 12px 27px;
+
+  span {
+    color: $purple_dark;
+  }
+
+  &:hover {
+    span {
+      color: $white;
+    }
+    &::before {
+      background-color: #633379;
+    }
+  }
+}
+
+.btn-outline {
+  @include button($white, none, 1);
+  width: 105px;
+  height: 42px;
+  border: 1px solid $purple_dark;
+  color: $white;
+
+  @media screen and (min-width: 630px) {
+    width: 112px;
+  }
+  @media screen and (min-width: 730px) {
+    width: 121px;
+  }
+
+  span {
+    z-index: 1;
+  }
+
+  &::before {
+    background-color: $purple_light;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+a:visited {
+  color: $black;
+}
+
+button:focus {
+  border: hidden;
+}
+
+form,
+button,
+input {
+  border: hidden;
+}
+
+.img-mob {
+  width: 414px;
+  height: auto;
+}
+
+.img-tab {
+  width: 340px;
+  height: auto;
+}
+
+.img-tab {
+  width: 560px;
+  height: auto;
+}

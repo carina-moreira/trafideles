@@ -1,0 +1,125 @@
+.rules {
+  background: $section_bg;
+  padding: 60px 30px;
+  @media screen and (min-width: 600px) {
+    padding: 60px 35px;
+  }
+  @media screen and (min-width: 675px) {
+    padding: 60px 50px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 60px 130px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 80px 200px;
+  }
+  @media screen and (min-width: 1040px) {
+    padding: 80px 250px;
+  }
+
+  .ball-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .text-title {
+    margin-bottom: 20px;
+  }
+
+  .rules-subtitle {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  .rules-text {
+    display: none;
+    .text-body {
+      width: 100%;
+      margin-block-start: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  .selectbox {
+    font-family: $bodyfont;
+    border: none;
+    background: $white;
+    box-shadow: $box_shadow;
+    border-radius: 8px;
+    height: 36px;
+    width: 100%;
+    background: url(../img/icon_arrow-down.svg) no-repeat;
+    background-position: right 20px center;
+    background-size: 20px;
+  }
+
+  &-header {
+    display: none;
+
+    button:focus {
+      color: $purple !important;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .selectbox {
+      display: none;
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #979797;
+      margin-top: 40px;
+
+      .text-body {
+        margin-block-end: 0;
+      }
+    }
+  }
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.65em 2.5em 0.55em 0.75em;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background: $purple_footer;
+}
+
+.rules-subtitle {
+  text-transform: uppercase;
+}
+
+.tablink {
+  background: $section_bg;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tablink:hover {
+  color: $purple;
+}
+
+.tabcontent {
+  margin-top: 30px;
+}
+
+/* tabs navigation example */
+/*#contents  div {
+    border: 1px black dotted;
+    display: none; //hides all div elements
+}
+
+#contents div:target {
+    display: block; //shows the selected div (target)
+}
+ */
